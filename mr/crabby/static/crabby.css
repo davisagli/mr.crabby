@@ -1,0 +1,82 @@
+.crabby {
+	z-index: 1000;
+	background: url(images/crab_blue_body_400.png);
+	position: fixed;
+	bottom: -400px;
+	right: 100px;
+	width: 400px;
+	height: 400px;
+	-webkit-transition: bottom 0.3s ease;
+    -moz-transition: bottom 0.3s ease;
+}
+
+.crabby .arm {
+	background: url(images/crab_blue_arm_400.png);
+	position: absolute;
+	width: 202px;
+	height: 156px;
+	top: 206px;
+	left: 160px;
+	-moz-transform-origin: 180px 10px;
+	-webkit-transform-origin: 180px 10px;
+}
+
+.crabby .arm .claw {
+	background: url(images/crab_blue_claw_400.png);
+	position: absolute;
+	top: 60px;
+	width: 131px;
+	height: 83px;
+	-moz-transform-origin: 120px 10px;
+	-webkit-transform-origin: 120px 10px;
+}
+
+@-moz-keyframes crab-wave {
+	0% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(30deg); }
+}
+@-webkit-keyframes crab-wave {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(30deg); }	
+}
+
+@-moz-keyframes crab-attack {
+	0% { -moz-transform: rotate(0deg); }
+	25% { -moz-transform: rotate(20deg); }
+	75% { -moz-transform: rotate(-10deg); }
+	100% { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes crab-attack {
+	0% { -webkit-transform: rotate(0deg); }
+	25% { -webkit-transform: rotate(20deg); }
+	75% { -webkit-transform: rotate(-10deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+.crabby.attacking {
+	bottom: 0px;
+}
+.crabby.attacking .arm {
+	-moz-animation-name: crab-wave;
+	-moz-animation-duration: .75s;
+	-moz-animation-iteration-count: 2;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+	-webkit-animation-name: crab-wave;
+	-webkit-animation-duration: .75s;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.crabby.attacking .claw {
+	-moz-animation-name: crab-attack;
+	-moz-animation-duration: 0.75s;
+	-moz-animation-iteration-count: 4;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+	-webkit-animation-name: crab-attack;
+	-webkit-animation-duration: 0.75s;
+	-webkit-animation-iteration-count: 4;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
