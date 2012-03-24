@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.2 (2012-03-24)
+----------------
+
+* Fix CSS for plone.org integration.
+  [davisagli]
+
 1.1 (2012-03-24)
 ----------------
 

@@ -1,6 +1,6 @@
 .crabby {
 	z-index: 1000;
-	background: url(images/crab_blue_body_400.png);
+	background: url(++resource++mr.crabby/images/crab_blue_body_400.png);
 	position: fixed;
 	bottom: -400px;
 	right: 100px;
@@ -11,7 +11,7 @@
 }
 
 .crabby .arm {
-	background: url(images/crab_blue_arm_400.png);
+	background: url(++resource++mr.crabby/images/crab_blue_arm_400.png);
 	position: absolute;
 	width: 202px;
 	height: 156px;
@@ -22,7 +22,7 @@
 }
 
 .crabby .arm .claw {
-	background: url(images/crab_blue_claw_400.png);
+	background: url(++resource++mr.crabby/images/crab_blue_claw_400.png);
 	position: absolute;
 	top: 60px;
 	width: 131px;
