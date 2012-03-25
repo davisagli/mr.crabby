@@ -1,13 +1,24 @@
 .crabby {
-	z-index: 1000;
-	background: url(++resource++mr.crabby/images/crab_blue_body_400.png);
+	z-index: 9999;
 	position: fixed;
-	bottom: -400px;
-	right: 100px;
-	width: 400px;
-	height: 400px;
+	bottom: -500px;
+	right: 50px;
+	width: 500px;
+	height: 500px;
+	background: -moz-radial-gradient(50% 50%, circle , #FFFFFF 0px, rgba(255, 255, 255, 0) 250px);
+	background: -webkit-radial-gradient(50% 50%, circle , #FFFFFF 0px, rgba(255, 255, 255, 0) 250px);
 	-webkit-transition: bottom 0.3s ease;
     -moz-transition: bottom 0.3s ease;
+}
+
+.crabby:after {
+	content: " ";
+	background: url(++resource++mr.crabby/images/crab_blue_body_400.png);
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 400px;
+	height: 400px;
 }
 
 .crabby .arm {
@@ -54,7 +65,7 @@
 }
 
 .crabby.attacking {
-	bottom: 0px;
+	bottom: -50px;
 }
 .crabby.attacking .arm {
 	-moz-animation-name: crab-wave;
