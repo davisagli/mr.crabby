@@ -33,24 +33,24 @@
 
 @-moz-keyframes crab-wave {
 	0% { -moz-transform: rotate(0deg); }
-	100% { -moz-transform: rotate(30deg); }
+	20% { -moz-transform: rotate(30deg); }
+	40% { -moz-transform: rotate(0deg); }
 }
 @-webkit-keyframes crab-wave {
 	0% { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(30deg); }	
+	20% { -webkit-transform: rotate(30deg); }
+	40% { -webkit-transform: rotate(0deg); }	
 }
 
 @-moz-keyframes crab-attack {
 	0% { -moz-transform: rotate(0deg); }
-	25% { -moz-transform: rotate(20deg); }
-	75% { -moz-transform: rotate(-10deg); }
-	100% { -moz-transform: rotate(0deg); }
+	7% { -moz-transform: rotate(20deg); }
+	14% { -moz-transform: rotate(-10deg); }
 }
 @-webkit-keyframes crab-attack {
 	0% { -webkit-transform: rotate(0deg); }
-	25% { -webkit-transform: rotate(20deg); }
-	75% { -webkit-transform: rotate(-10deg); }
-	100% { -webkit-transform: rotate(0deg); }
+	7% { -webkit-transform: rotate(20deg); }
+	14% { -webkit-transform: rotate(-10deg); }
 }
 
 .crabby.attacking {
@@ -58,25 +58,23 @@
 }
 .crabby.attacking .arm {
 	-moz-animation-name: crab-wave;
-	-moz-animation-duration: .75s;
-	-moz-animation-iteration-count: 2;
-	-moz-animation-direction: alternate;
+	-moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
 	-moz-animation-timing-function: ease-in-out;
 	-webkit-animation-name: crab-wave;
-	-webkit-animation-duration: .75s;
-	-webkit-animation-iteration-count: 2;
-	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: ease-in-out;
 }
 .crabby.attacking .claw {
 	-moz-animation-name: crab-attack;
 	-moz-animation-duration: 0.75s;
-	-moz-animation-iteration-count: 4;
+	-moz-animation-iteration-count: infinite;
 	-moz-animation-direction: alternate;
 	-moz-animation-timing-function: ease-in-out;
 	-webkit-animation-name: crab-attack;
 	-webkit-animation-duration: 0.75s;
-	-webkit-animation-iteration-count: 4;
+	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-timing-function: ease-in-out;
 }
