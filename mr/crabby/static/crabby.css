@@ -30,6 +30,7 @@
 	left: 210px;
 	-moz-transform-origin: 180px 10px;
 	-webkit-transform-origin: 180px 10px;
+	z-index: 1;
 }
 
 .crabby .arm .claw {
